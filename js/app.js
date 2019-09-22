@@ -19,6 +19,7 @@ $(document).ready(function(){
         initialSlide: 1,
         speed: 500,
         fade: true,
+        swipe: false,
         cssEase: 'linear'
     });
 
@@ -51,6 +52,21 @@ $(document).ready(function(){
 
     $('.img_box').mouseleave(function(){
         $(this).find(".portfolio_box-content").removeClass("display_block")
+
+    });
+
+    $('.team_content-item').mouseenter(function(){
+        $(this).find(".team_content-text").addClass("display_block");
+        $(this).find(".team_content-img").addClass("display_block");
+        $(this).find(".team_content-img").addClass("big_img");
+
+
+    });
+
+    $('.team_content-item').mouseleave(function(){
+        $(this).find(".team_content-text").removeClass("display_block")
+        $(this).find(".team_content-img").removeClass("display_block");
+        $(this).find(".team_content-img").removeClass("big_img");
 
     });
 
