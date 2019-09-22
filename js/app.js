@@ -22,6 +22,17 @@ $(document).ready(function(){
         cssEase: 'linear'
     });
 
+    $('.cafe_slide').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: false,
+        dots: true,
+        arrows: false,
+        аccessibility: false
+    });
+
+    
+
 
     $('.advantages_section').mouseenter(function(){
         $(this).find(".advantages_img-border").addClass("rotate_45");
