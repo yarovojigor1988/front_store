@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(document).ready(function() {
     $('.carousel').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -6,7 +6,7 @@ $(document).ready(function(){
         autoplaySpeed: 5000,
         dots: false,
         arrows: true,
-        аccessibility: false
+        accessibility: false
     });
 
     $('.service_carousel').slick({
@@ -15,7 +15,7 @@ $(document).ready(function(){
         autoplay: false,
         dots: true,
         arrows: false,
-        аccessibility: false,
+        accessibility: false,
         initialSlide: 1,
         speed: 500,
         fade: true,
@@ -29,33 +29,33 @@ $(document).ready(function(){
         autoplay: false,
         dots: true,
         arrows: false,
-        аccessibility: false
+        accessibility: false
     });
 
-    
 
 
-    $('.advantages_section').mouseenter(function(){
+
+    $('.advantages_section').mouseenter(function() {
         $(this).find(".advantages_img-border").addClass("rotate_45");
         $(this).find(".advantages_title").addClass("color_orange");
     });
 
-    $('.advantages_section').mouseleave(function(){
+    $('.advantages_section').mouseleave(function() {
         $(this).find(".advantages_img-border").removeClass("rotate_45")
         $(this).find(".advantages_title").removeClass("color_orange");
 
     });
 
-    $('.img_box').mouseenter(function(){
+    $('.img_box').mouseenter(function() {
         $(this).find(".portfolio_box-content").addClass("display_block");
     });
 
-    $('.img_box').mouseleave(function(){
+    $('.img_box').mouseleave(function() {
         $(this).find(".portfolio_box-content").removeClass("display_block")
 
     });
 
-    $('.team_content-item').mouseenter(function(){
+    $('.team_content-item').mouseenter(function() {
         $(this).find(".team_content-text").addClass("display_block");
         $(this).find(".team_content-img").addClass("display_block");
         $(this).find(".team_content-img").addClass("big_img");
@@ -63,7 +63,7 @@ $(document).ready(function(){
 
     });
 
-    $('.team_content-item').mouseleave(function(){
+    $('.team_content-item').mouseleave(function() {
         $(this).find(".team_content-text").removeClass("display_block")
         $(this).find(".team_content-img").removeClass("display_block");
         $(this).find(".team_content-img").removeClass("big_img");
@@ -73,7 +73,7 @@ $(document).ready(function(){
 
 });
 
-$(document).on('click', '.tabs_nav-link', function(e){
+$(document).on('click', '.tabs_nav-link', function(e) {
     e.preventDefault();
     var tabId = $(this).attr('href');
     $(this).addClass('active');
