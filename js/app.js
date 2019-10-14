@@ -3,7 +3,7 @@ $(document).ready(function(){
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 5000,
+        autoplaySpeed: 500000,
         dots: false,
         arrows: true,
         аccessibility: false
@@ -22,15 +22,25 @@ $(document).ready(function(){
         swipe: false,
         cssEase: 'linear'
     });
-
+    $('.cafe-img-slide').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        dots: false,
+        fade: true,
+        аccessibility: false,
+        asNavFor: '.cafe_slide'
+    });
     $('.cafe_slide').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: false,
         dots: true,
         arrows: false,
-        аccessibility: false
+        аccessibility: false,
+        asNavFor: '.cafe-img-slide'
     });
+
 
     
 

@@ -114,16 +114,22 @@ ul{
 .carousel_item{
     width: 100%;
     position: relative;
-    overflow: visible;
+    min-height: 100vh;
+    -webkit-background-size: contain;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: top right;
+    z-index: 4;
 }
 
 
 .slide-container {
-    position: absolute;
+    position: relative;
     z-index: 9;
-    left: 50%;
+    margin-top: 320px;
+    /* left: 50%;
     top: 33%;
-    transform: translateX(-50%);
+    transform: translateX(-50%); */
     color: #fff;
     text-align: center;
     font-family: 'Open Sans', Arial, Helvetica, sans-serif;
@@ -227,7 +233,7 @@ ul{
 }
 
 
-.dark:before{
+.carousel_item:before{
     content: '';
     position: absolute;
     top: 0;
@@ -242,7 +248,7 @@ ul{
     background-color: #fff;
 }
 
-.white:after{
+.carousel_item:after{
     content: '';
     width: 100.1%;
     height: 12.43%;
@@ -668,8 +674,8 @@ left: 0;
 }
 
 .cafe_contant-holder{
-    display: flex;
-    justify-content: flex-end;
+    /* display: flex;
+    justify-content: flex-end; */
     position: relative;
     overflow: hidden;
 }
@@ -686,6 +692,12 @@ left: 0;
     top: 45px;
     text-align: center;
     overflow: hidden;
+    z-index: 999999;
+}
+.cafe-img-holder{
+    position: relative;
+    margin-left: 50%;
+    
 }
 
 .cafe-slide-holder{
